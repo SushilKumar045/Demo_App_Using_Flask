@@ -13,8 +13,8 @@ This is a demo application built using Flask, a lightweight WSGI web application
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/demo-app-using-flask.git
-   cd demo-app-using-flask
+   git clone https://github.com/yourusername/Demo_App_Using_Flask.git
+   cd Demo_App_Using_Flask
    ```
 
 2. **Create a virtual environment:**
