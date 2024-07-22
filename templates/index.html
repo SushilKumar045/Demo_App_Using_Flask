@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<title>Machine Learning Lab Experiment Deployment</title>
+<meta charset="UTF-8">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<style><!DOCTYPE html>
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+
+<body>
+
+
+<div class="" style="background-color:#001F5E;" >
+<div class="clearfix">
+
+<div class="col-md-12">
+<center><p style="font-size:40px;color:white;margin-top:10px;">Blackcoffer (OPC) Pvt. Ltd.</p></center>
+<center><p style="font-size:30px;color:white;margin-top:10px;">Delivering Beautiful Insights</p></center>
+<center><p style="font-size:25px;color:white;margin-top:10px;">Demo App Using Flask</p></center>
+</div>
+</div>
+</div>
+
+<div class="login">
+<h3 >Multiple Linear Regression Analysis to predict the price by the inputes for a Area</h3>
+<h4>Developed by Sushil Kuamr</h4>
+<!-- Main Input For Receiving Query to our ML -->
+<form action="{{ url_for('predict')}}"method="get">
+<div class="form-floating mb-3">
+
+<input type="number" class="form-control" id="SqFt" name="SqFt" step="any" min="0" max="10000000000" placeholder="0" required="required">
+<label for="floatingInput">Enter Sqft of Area</label>
+</div>
+<br>
+
+<div class="form-floating mb-3">
+<input type="number" class="form-control" id="Bedrooms" name="Bedrooms" step="any" min="0" max="10" placeholder="0" required="required">
+<label for="floatingInput">Enter no. of Bedrooms</label>
+</div>
+<br>
+
+<div class="form-floating mb-3">
+<input type="number" class="form-control" id="Bathrooms" name="Bathrooms" step="any" min="0" max="10" placeholder="0" required="required">
+<label for="floatingInput">Enter number of bathrooms</label>
+</div>
+<br>
+
+<div class="form-floating mb-3">
+<input type="number" class="form-control" id="Offers" name="Offers" step="any" min="0" max="100" placeholder="0" required="required">
+<label for="floatingInput">Enter no. of offers</label>
+</div>
+<br>
+
+<div class="form-floating mb-3">
+<input type="number" class="form-control" id="Brick" name="Brick" step="any" min="0" max="1" placeholder="0" required="required">
+<label for="floatingInput">Enter '1' if the brick is available otherwise Enter "0" if brick is not available</label>
+</div>
+<br>
+
+<div class="form-floating mb-3">
+<input type="number" class="form-control" id="exp" name="Neighborhood" step="Neighborhood" min="0" max="2" placeholder="0" required="required">
+<label for="floatingInput">Enter the Neighborhood for East press "0", for North press "1", for West press "2" </label>
+</div>
+<br>
+
+<br>
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict Price for Given Requirements</button>
+</form>
+<br>
+<br>
+{{ prediction_text }}
+
+</div>
+
+<div class="" style="background-color:#001F5E;" >
+<div class="clearfix">
+
+<div class="col-md-12">
+ <center><p style="font-size:25px;color:white;margin-top:20px;">Demo Flask Application</p></center>
+</div>
+</div>
+</div>
+</body>
+</html>
