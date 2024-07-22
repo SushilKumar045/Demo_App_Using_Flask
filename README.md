@@ -61,7 +61,7 @@ This is a demo application built using Flask, a lightweight WSGI web application
 ## Project Structure
 
 ```
-demo-app-using-flask/
+Demo_App_Using_Flask/
 │
 ├── app.py                # Main Flask application
 ├── Demo_app_flask.pkl    # Pickle file for the machine learning model
